@@ -1,0 +1,22 @@
+{
+  "name": "hexlet_1",
+  "version": "1.0.0",
+  "description": "Hexlet project #1",
+  "main": "",
+  "bin": {
+    "sayWelcome": "./src/bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stakeout/frontend-project-lvl1.git"
+  },
+  "author": "Vadim Novash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stakeout/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/stakeout/frontend-project-lvl1#readme"
+}
