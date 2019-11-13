@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import sayYourName from '..';
+import isEven from '..';
 
 console.log('Welcome to the Brain Games!');
-sayYourName('May I have your name? ');
+isEven();
