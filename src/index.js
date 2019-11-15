@@ -9,7 +9,7 @@ const gameEngine = (gameCondition, gameFn) => {
   for (let i = 0; i < attemps; i += 1) {
     const results = gameFn();
     const userAnswer = readlineSync.question(`Question: ${results[0]}\nYour answer: `);
-    if (userAnswer !== results[1]) {
+    if (userAnswer !== `${results[1]}`) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${results[1]}'`);
       console.log(`Let's try again, ${userName}!`);
       return false;
