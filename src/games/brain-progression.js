@@ -11,7 +11,7 @@ const game = () => {
   const progressionStep = getRandomNumber(2, 4);
   const makeProgression = (startIndex, length, step) => {
     const result = [];
-    for (let i = startIndex; length > 0; i += step) {
+    for (let i = startIndex; length >= 0; i += step) {
       result.push(i);
       length -= 1;
     }
