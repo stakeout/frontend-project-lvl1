@@ -7,11 +7,11 @@ const game = () => {
   const mask = '..';
   const progressionStartDigit = 5;
   const progressionLength = 10;
-  const maskedIndex = getRandomNumber(0, progressionLength);
+  const maskedIndex = getRandomNumber(0, progressionLength - 1);
   const progressionStep = getRandomNumber(2, 4);
   const makeProgression = (startIndex, length, step) => {
     const result = [];
-    for (let i = startIndex; length >= 0; i += step) {
+    for (let i = startIndex; length > 0; i += step) {
       result.push(i);
       length -= 1;
     }
