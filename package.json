@@ -1,7 +1,8 @@
 {
-  "name": "hexlet_1",
+  "name": "brain-games",
   "version": "1.7.0",
-  "description": "Hexlet project #1",
+  "description": "Hexlet project \"Brain games\"",
+  "keywords": ["node.js", "npm", "babel", "eslint", "travis", "git", "asciinema", "es6", "bash", "make utility"],
   "main": "",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
