@@ -32,3 +32,15 @@ brain-progression
 ```bash
 brain-prime
 ```
+## Used technologies:
+
+* node.js
+* npm
+* babel
+* eslint
+* travis
+* git
+* asciinema
+* es6
+* bash
+* make utility
