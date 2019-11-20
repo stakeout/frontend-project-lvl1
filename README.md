@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/41a2844d070398eeeb03/maintainability)](https://codeclimate.com/github/stakeout/frontend-project-lvl1/maintainability)
 [![Build Status](https://travis-ci.org/stakeout/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/stakeout/frontend-project-lvl1)
 # Hexlet project #1 aka "Brain-games"
 

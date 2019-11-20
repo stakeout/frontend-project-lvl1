@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import gameEngine from '..';
+import makeGameEngine from '..';
 import getRandomNumber from '../getRandomNumber';
 
 const gameCondition = 'What number is missing in the progression?';
-const game = () => {
+const createGame = () => {
   const mask = '..';
   const progressionStartDigit = 5;
   const progressionLength = 10;
@@ -11,9 +11,10 @@ const game = () => {
   const progressionStep = getRandomNumber(2, 4);
   const makeProgression = (startIndex, length, step) => {
     const result = [];
-    for (let i = startIndex; length > 0; i += step) {
+    let size = length;
+    for (let i = startIndex; size > 0; i += step) {
       result.push(i);
-      length -= 1;
+      size -= 1;
     }
     return result;
   };
@@ -26,4 +27,4 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-export default () => gameEngine(gameCondition, game);
+export default () => makeGameEngine(gameCondition, createGame);
