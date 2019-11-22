@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import makeGameEngine from '..';
+import engine from '..';
 import getRandomNumber from '../getRandomNumber';
 
 const gameCondition = 'Find the greatest common divisor of given numbers.';
@@ -24,4 +24,4 @@ const createGame = () => {
   return [question, correctAnswer];
 };
 
-export default () => makeGameEngine(gameCondition, createGame);
+export default () => engine(gameCondition, createGame);

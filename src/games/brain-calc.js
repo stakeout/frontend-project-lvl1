@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import makeGameEngine from '..';
+import engine from '..';
 import getRandomNumber from '../getRandomNumber';
 
 const gameCondition = 'What is the result of the expression?';
@@ -26,4 +26,4 @@ const createGame = () => {
   return [question, correctAnswer];
 };
 
-export default () => makeGameEngine(gameCondition, createGame);
+export default () => engine(gameCondition, createGame);

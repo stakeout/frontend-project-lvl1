@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import makeGameEngine from '..';
+import engine from '..';
 import getRandomNumber from '../getRandomNumber';
 
 const gameCondition = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -10,4 +10,4 @@ const createGame = () => {
   return [question, correctAnswer];
 };
 
-export default () => makeGameEngine(gameCondition, createGame);
+export default () => engine(gameCondition, createGame);
