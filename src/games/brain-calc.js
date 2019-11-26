@@ -5,12 +5,12 @@ import getRandomNumber from '../getRandomNumber';
 const gameCondition = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 const createGame = () => {
-  const operator = operations[getRandomNumber(0, operations.length - 1)];
+  const operation = operations[getRandomNumber(0, operations.length - 1)];
   const leftOperand = getRandomNumber(1, 25);
   const rightOperand = getRandomNumber(1, 25);
-  const question = `${leftOperand} ${operator} ${rightOperand}`;
+  const question = `${leftOperand} ${operation} ${rightOperand}`;
   let correctAnswer;
-  switch (operator) {
+  switch (operation) {
     case '+':
       correctAnswer = leftOperand + rightOperand;
       break;
